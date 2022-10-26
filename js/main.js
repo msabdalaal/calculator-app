@@ -2,15 +2,25 @@ let screen = document.getElementById("screen");
 let result;
 let typeNum = (id) => {
   let num = document.getElementById(`${id}`).innerHTML;
-  if (screen.innerHTML == result) {
-    screen.innerHTML = num;
+  if (screen.innerHTML.length == 14) {
   } else {
-    if (num == "." && screen.innerHTML == 0) {
+    if (screen.innerHTML == result) {
+      screen.innerHTML = num;
+    } else if (
+      (screen.innerHTML == "0." && id == ".") ||
+      (screen.innerHTML == "." && id == ".")
+    ) {
       screen.innerHTML = "0.";
+    } else if (screen.innerHTML[1] == "." && num == ".") {
+      screen.innerHTML = screen.innerHTML;
     } else {
-      if (screen.innerHTML == "0") {
-        screen.innerHTML = num;
-      } else screen.innerHTML += num;
+      if (num == "." && screen.innerHTML == 0) {
+        screen.innerHTML = "0.";
+      } else {
+        if (screen.innerHTML == "0") {
+          screen.innerHTML = num;
+        } else screen.innerHTML += num;
+      }
     }
   }
 };

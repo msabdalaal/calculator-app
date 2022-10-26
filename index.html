@@ -24,11 +24,10 @@
     <link rel="stylesheet" href="./css/style.css" />
     <style></style>
   </head>
-  <body
-    class="d-flex justify-content-center align-items-center flex-column m-0 p-0"
-    ondragstart="return false"
-  >
-    <main>
+  <body ondragstart="return false">
+    <main
+      class="d-flex justify-content-center align-items-center flex-column m-0 p-0"
+    >
       <div class="container">
         <div class="title d-flex justify-content-between">
           <h2 class="text-light">calc</h2>
@@ -80,7 +79,7 @@
           </div>
           <div class="d-flex justify-content-between flex-row gap-3">
             <a id="." class="num" onclick="typeNum(this.id)">.</a>
-            <a class="num" onclick="typeNum(this.id)">0</a>
+            <a id="0" class="num" onclick="typeNum(this.id)">0</a>
             <a id="/" class="num" onclick="operate(this.id)">/</a>
             <a id="x" class="num" onclick="operate(this.id)">x</a>
           </div>
