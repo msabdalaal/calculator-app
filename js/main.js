@@ -5,9 +5,13 @@ let typeNum = (id) => {
   if (screen.innerHTML == result) {
     screen.innerHTML = num;
   } else {
-    if (screen.innerHTML == 0) {
-      screen.innerHTML = num;
-    } else screen.innerHTML += num;
+    if (num == "." && screen.innerHTML == 0) {
+      screen.innerHTML = "0.";
+    } else {
+      if (screen.innerHTML == "0") {
+        screen.innerHTML = num;
+      } else screen.innerHTML += num;
+    }
   }
 };
 
