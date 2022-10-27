@@ -41,13 +41,13 @@ body {
 .ball {
   width: 0.7rem;
   height: 0.7rem;
-  background-color: hsl(223, 31%, 20%);
+  background-color: transparent;
   z-index: 1;
 }
-.ballActive {
+.orange {
   background-color: hsl(6, 63%, 50%);
 }
-.ballActive:hover {
+.orange:hover {
   background-color: hsl(6, 63%, 60%);
 }
 .ball:hover {
@@ -106,3 +106,117 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* Strat Light */
+body.light {
+  background-color: hsl(0, 0%, 90%);
+}
+.container.light div h2 {
+  color: hsl(60, 10%, 19%) !important;
+}
+.toggle.light {
+  background-color: hsl(0, 5%, 81%);
+}
+.theme.light {
+  color: hsl(60, 10%, 19%) !important;
+}
+.numbers.light p {
+  color: hsl(60, 10%, 19%) !important;
+}
+.ball.light {
+  background-color: hsl(25, 98%, 40%);
+}
+.ball.light:hover {
+  background-color: hsl(25, 98%, 50%);
+}
+.screen.light {
+  background-color: hsl(60, 10%, 19%) !important;
+}
+.screen.light h1 {
+  color: hsl(60, 10%, 19%);
+}
+.keybad.light {
+  background-color: hsl(0, 5%, 81%);
+}
+.keybad.light .num {
+  background-color: hsl(45, 7%, 89%);
+  box-shadow: 0px 0.2rem 0px 0px hsl(35, 11%, 61%);
+  color: hsl(60, 10%, 19%);
+}
+.keybad.light .num:hover {
+  background-color: hsl(45, 7%, 99%);
+}
+.keybad.light .butn {
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0px 0.2rem 0px 0px hsl(185, 58%, 25%);
+  color: white;
+}
+.keybad.light .butn:hover {
+  background-color: hsl(185, 42%, 47%);
+}
+.keybad.light .equal {
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: 0px 0.2rem 0px 0px hsl(25, 99%, 27%);
+  color: white;
+}
+.keybad.light .equal:hover {
+  background-color: hsl(25, 98%, 50%);
+}
+/* End Light */
+
+/* Strat dark */
+body.dark {
+  background-color: hsl(268, 75%, 9%);
+}
+.container.dark div h2 {
+  color: hsl(52, 100%, 62%) !important;
+}
+.toggle.dark {
+  background-color: hsl(268, 71%, 12%);
+}
+.theme.dark {
+  color: hsl(52, 100%, 62%) !important;
+}
+.numbers.dark p {
+  color: hsl(52, 100%, 62%) !important;
+}
+.ball.dark {
+  background-color: hsl(176, 100%, 44%);
+}
+.ball.dark:hover {
+  background-color: hsl(176, 100%, 54%);
+}
+.screen.dark {
+  background-color: hsl(268, 71%, 12%);
+}
+.screen.dark h1 {
+  color: hsl(52, 100%, 62%) !important;
+}
+.keybad.dark {
+  background-color: hsl(268, 71%, 12%);
+}
+.keybad.dark .num {
+  background-color: hsl(268, 47%, 21%);
+  box-shadow: 0px 0.2rem 0px 0px hsl(290, 70%, 36%);
+  color: hsl(52, 100%, 62%);
+}
+.keybad.dark .num:hover {
+  background-color: hsl(268, 47%, 31%);
+}
+.keybad.dark .butn {
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: 0px 0.2rem 0px 0px hsl(285, 91%, 52%);
+  color: white;
+}
+.keybad.dark .butn:hover {
+  background-color: hsl(281, 89%, 36%);
+}
+.keybad.dark .equal {
+  background-color: hsl(176, 100%, 44%);
+  box-shadow: 0px 0.2rem 0px 0px hsl(177, 92%, 70%);
+  color: hsl(198, 20%, 13%);
+}
+.keybad.dark .equal:hover {
+  background-color: hsl(176, 100%, 54%);
+}
+/* End dark */

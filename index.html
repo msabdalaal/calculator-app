@@ -24,41 +24,55 @@
     <link rel="stylesheet" href="./css/style.css" />
     <style></style>
   </head>
-  <body ondragstart="return false">
+  <body ondragstart="return false" class="light dark">
     <main
       class="d-flex justify-content-center align-items-center flex-column m-0 p-0"
     >
-      <div class="container">
+      <div class="container light dark">
         <div class="title d-flex justify-content-between">
           <h2 class="text-light">calc</h2>
           <div
             class="themeSelect position-relative d-flex align-items-center justify-content-center"
           >
-            <p class="theme me-3 m-0 text-light">THEME</p>
+            <p class="theme me-3 m-0 text-light light dark">THEME</p>
             <div
-              class="toggle p-1 d-flex justify-content-start align-items-center rounded-pill"
+              class="toggle p-1 d-flex justify-content-start align-items-center rounded-pill light dark"
             >
               <div
-                class="numbers text-light d-flex justify-content-between bg-transparent p-1"
+                class="numbers text-light d-flex justify-content-between bg-transparent p-1 light dark"
               >
                 <p>1</p>
                 <p>2</p>
                 <p>3</p>
               </div>
               <div class="d-flex w-100 justify-content-between">
-                <div class="ball rounded-circle ballActive"></div>
-                <div class="ball rounded-circle"></div>
-                <div class="ball rounded-circle"></div>
+                <div
+                  id="normal"
+                  class="ball rounded-circle orange"
+                  onclick="changeTheme(this.id)"
+                ></div>
+                <div
+                  id="light"
+                  class="ball rounded-circle light"
+                  onclick="changeTheme(this.id)"
+                ></div>
+                <div
+                  id="dark"
+                  class="ball rounded-circle dark"
+                  onclick="changeTheme(this.id)"
+                ></div>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="screen mb-3 d-flex align-items-center justify-content-end p-3 w-100 rounded-3"
+          class="screen mb-3 d-flex align-items-center justify-content-end p-3 w-100 rounded-3 light dark"
         >
           <h1 id="screen" class="text-light m-0">0</h1>
         </div>
-        <div class="keybad d-flex flex-column text-center p-3 gap-3 rounded-3">
+        <div
+          class="keybad d-flex flex-column text-center p-3 gap-3 rounded-3 light dark"
+        >
           <div class="d-flex justify-content-between flex-row gap-3">
             <a id="7" class="num" onclick="typeNum(this.id)">7</a>
             <a id="8" class="num" onclick="typeNum(this.id)">8</a>

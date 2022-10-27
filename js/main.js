@@ -65,3 +65,48 @@ let equal = () => {
 let reset = () => {
   screen.innerHTML = 0;
 };
+let ball1 = document.getElementById("normal");
+let ball2 = document.getElementById("light");
+let ball3 = document.getElementById("dark");
+let light = document.querySelectorAll(".light");
+let dark = document.querySelectorAll(".dark");
+
+let resetTheme = () => {
+  for (let i = 0; i < light.length; i++) {
+    light[i].classList.remove("light");
+  }
+  for (let i = 0; i < light.length; i++) {
+    dark[i].classList.remove("dark");
+  }
+};
+resetTheme();
+
+let changeTheme = (id) => {
+  if (id == "normal") {
+    for (let i = 0; i < light.length; i++) {
+      light[i].classList.remove("light");
+    }
+    for (let i = 0; i < light.length; i++) {
+      dark[i].classList.remove("dark");
+    }
+    ball1.classList.add("orange");
+  }
+  if (id == "light") {
+    for (let i = 0; i < light.length; i++) {
+      light[i].classList.add("light");
+    }
+    for (let i = 0; i < light.length; i++) {
+      dark[i].classList.remove("dark");
+    }
+    ball1.classList.remove("orange");
+  }
+  if (id == "dark") {
+    for (let i = 0; i < light.length; i++) {
+      dark[i].classList.add("dark");
+    }
+    for (let i = 0; i < light.length; i++) {
+      light[i].classList.remove("light");
+    }
+    ball1.classList.remove("orange");
+  }
+};
