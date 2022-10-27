@@ -15,13 +15,17 @@ a:hover {
 body {
   font-family: "League Spartan", sans-serif;
   background-color: hsl(222, 26%, 31%);
+  height: 100vh;
   max-height: 100vh;
   padding: 5rem 0rem;
+}
+main{
+  height: 100vh;
 }
 .container {
   width: 50vw;
   min-width: 350px;
-  max-width: 450px;
+  max-width: 400px;
 }
 .theme {
   font-size: 0.5rem;
