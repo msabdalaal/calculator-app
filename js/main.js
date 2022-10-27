@@ -85,7 +85,7 @@ resetTheme();
 
 let changeTheme = (id) => {
   window.localStorage.setItem("theme", id);
-  console.log(window.localStorage.getItem("theme"));
+  console.log(id == "normal");
   if (window.localStorage.getItem("theme") == "normal") {
     for (let i = 0; i < light.length; i++) {
       light[i].classList.remove("light");
