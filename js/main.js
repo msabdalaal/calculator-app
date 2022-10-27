@@ -62,6 +62,8 @@ let equal = () => {
       break;
   }
 };
+
+///////////////////////////////theme
 let reset = () => {
   screen.innerHTML = 0;
 };
@@ -82,7 +84,9 @@ let resetTheme = () => {
 resetTheme();
 
 let changeTheme = (id) => {
-  if (id == "normal") {
+  window.localStorage.setItem("theme", id);
+  console.log(window.localStorage.getItem("theme"));
+  if (window.localStorage.getItem("theme") == "normal") {
     for (let i = 0; i < light.length; i++) {
       light[i].classList.remove("light");
     }
@@ -110,3 +114,4 @@ let changeTheme = (id) => {
     ball1.classList.remove("orange");
   }
 };
+changeTheme(window.localStorage.getItem("theme"));
