@@ -130,10 +130,10 @@ body.light {
   background-color: hsl(25, 98%, 50%);
 }
 .screen.light {
-  background-color: hsl(60, 10%, 19%) !important;
+  background-color: hsl(0, 0%, 93%);
 }
 .screen.light h1 {
-  color: hsl(60, 10%, 19%);
+  color: hsl(60, 10%, 19%) !important;
 }
 .keybad.light {
   background-color: hsl(0, 5%, 81%);
